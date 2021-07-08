@@ -53,10 +53,10 @@ If car was born to error, it need to correct.
 
 # Optimization process
 1. I take obvious large number 15. The car run like "Z" style and Crash.(I and D are zero)
-![1](CarND-PID-Control-Project/Img/image1.png)
+![1](Img/image1.png)
 
 2. I try  0.1.
-![2](CarND-PID-Control-Project/Img/image2.png)
+![2](Img/image2.png)
 It was still crash.
 I think I can't test one parameter at a time.
 I need adjustment three parameter a same time.
