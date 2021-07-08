@@ -19,7 +19,7 @@ Self-Driving Car Engineer Nanodegree Program
   * Run either `./install-mac.sh` or `./install-ubuntu.sh`.
   * If you install from source, checkout to commit `e94b6e1`, i.e.
     ```
-    git clone https://github.com/uWebSockets/uWebSockets 
+    git clone https://github.com/uWebSockets/uWebSockets
     cd uWebSockets
     git checkout e94b6e1
     ```
@@ -33,11 +33,11 @@ Fellow students have put together a guide to Windows set-up for the project [her
 1. Clone this repo.
 2. Make a build directory: `mkdir build && cd build`
 3. Compile: `cmake .. && make`
-4. Run it: `./pid`. 
+4. Run it: `./pid`.
 
 Tips for setting up your environment can be found [here](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/23d376c7-0195-4276-bdf0-e02f1f3c665d)
 
-## Parameter 
+## Parameter
 PID = Proportional Integral Derivative controller.
 
 * Proportional Component (P)
@@ -53,11 +53,11 @@ If car was born to error, it need to correct.
 
 # Optimization process
 1. I take obvious large number 15. The car run like "Z" style and Crash.(I and D are zero)
-![1](/home/workspace/CarND-PID-Control-Project/Img/image1.png)
+![1](CarND-PID-Control-Project/Img/image1.png)
 
 2. I try  0.1.
-![2](/home/workspace/CarND-PID-Control-Project/Img/image2.png)
-It was still crash. 
+![2](CarND-PID-Control-Project/Img/image2.png)
+It was still crash.
 I think I can't test one parameter at a time.
 I need adjustment three parameter a same time.
 
@@ -66,6 +66,3 @@ so I try PID as (0.2,0.004,3)
 the car run safty, but horizontal shake still too large.
 try (0.1,0.004,3) still too large.
 According this way, I finaly use (0.1, 0.0004, 1.3)  by trial and error.
-
-
-
